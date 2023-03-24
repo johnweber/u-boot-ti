@@ -138,6 +138,14 @@ static void store_boot_info_from_rom(void)
 	       sizeof(struct rom_extended_boot_data));
 }
 
+static void setup_qos(void)
+{
+	u32 i;
+
+	for (i = 0; i < j784s4_qos_count; i++)
+		writel(j784s4_qos_data[i].val, (uintptr_t)j784s4_qos_data[i].reg);
+}
+
 void board_init_f(ulong dummy)
 {
 	struct udevice *dev;
@@ -235,6 +243,8 @@ void board_init_f(ulong dummy)
 		if (ret)
 			panic("DRAM 3 init failed: %d\n", ret);
 	}
+
+	setup_qos();
 
 	spl_enable_dcache();
 }

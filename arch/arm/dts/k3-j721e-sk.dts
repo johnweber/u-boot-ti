@@ -794,3 +794,138 @@
 	memory-region = <&c71_0_dma_memory_region>,
 			<&c71_0_memory_region>;
 };
+
+&main_gpio0 {
+	gpio0-7-hog {
+		gpio-hog;
+		gpios = <7   GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_7";
+	};
+
+	gpio0-71-hog {
+		gpio-hog;
+		gpios = <71 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_71";
+	};
+
+	gpio0-82-hog {
+		gpio-hog;
+		gpios = <82 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_82";
+	};
+
+	gpio0-11-hog {
+		gpio-hog;
+		gpios = <11 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_11";
+	};
+
+	gpio0-101-hog {
+		gpio-hog;
+		gpios = <101 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_101";
+	};
+
+	gpio0-107-hog {
+		gpio-hog;
+		gpios = <107 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_107";
+	};
+
+	gpio0-103-hog {
+		gpio-hog;
+		gpios = <103 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_103";
+	};
+
+	gpio0-2-hog {
+		gpio-hog;
+		gpios = <2 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_2";
+	};
+
+	gpio0-115-hog {
+		gpio-hog;
+		gpios = <115 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_115";
+	};
+
+	gpio0-70-hog {
+		gpio-hog;
+		gpios = <70 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_70";
+	};
+
+	gpio0-81-hog {
+		gpio-hog;
+		gpios = <81 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_81";
+	};
+
+	gpio0-1-hog {
+		gpio-hog;
+		gpios = <1 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_1";
+	};
+
+	gpio0-5-hog {
+		gpio-hog;
+		gpios = <5 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_5";
+	};
+
+	gpio0-8-hog {
+		gpio-hog;
+		gpios = <8 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_8";
+	};
+
+	gpio0-102-hog {
+		gpio-hog;
+		gpios = <102 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_102";
+	};
+
+	gpio0-108-hog {
+		gpio-hog;
+		gpios = <108 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_108";
+	};
+
+	gpio0-97-hog {
+		gpio-hog;
+		gpios = <97 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_97";
+	};
+
+	gpio0-3-hog {
+		gpio-hog;
+		gpios = <3 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_3";
+	};
+
+	gpio0-4-hog {
+		gpio-hog;
+		gpios = <4 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "GPIO0_4";
+	};
+};

@@ -769,7 +769,7 @@ static int cadence_spi_probe(struct udevice *bus)
 
 	ret = reset_get_bulk(bus, &priv->resets);
 	if (ret)
-		dev_warn(bus, "Can't get reset: %d\n", ret);
+		dev_dbg(bus, "Can't get reset: %d\n", ret);
 	else
 		reset_deassert_bulk(&priv->resets);
 
